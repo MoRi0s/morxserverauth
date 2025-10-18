@@ -1,3 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discord 認証</title>
+  <script src="https://hcaptcha.com/1/api.js" async defer></script>
+  <style>
+    body { background: #0d1117; color: white; text-align: center; padding-top: 100px; font-family: sans-serif; }
+    .container { background: #161b22; padding: 30px; border-radius: 12px; display: inline-block; }
+    button { margin-top: 20px; padding: 10px 20px; font-size: 16px; border: none; border-radius: 6px; background: #5865F2; color: white; cursor: pointer; }
+  </style>
+</head>
 <body>
-  あああ
+  <div class="container">
+    <h1>🔒 Discord 認証</h1>
+    <form action="https://morxserverbot.onrender.com/verify" method="POST">
+      <div class="h-captcha" data-sitekey="a47eb710-d32e-45e4-ac3e-570a0ab0033c"></div>
+      <button type="submit">認証する</button>
+    </form>
+  </div>
 </body>
+</html>
